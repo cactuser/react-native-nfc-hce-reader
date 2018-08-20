@@ -12,11 +12,11 @@ Inspired by [android-CardReader](https://github.com/googlesamples/android-CardRe
 
 ## Getting started
 
-`$ npm install react-native-hce-reader --save`
+`$ npm install react-native-nfc-hce-reader --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-hce-reader`
+`$ react-native link react-native-nfc-hce-reader`
 
 ### Manual installation
 
