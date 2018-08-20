@@ -1,6 +1,6 @@
 # react-native-nfc-hce-reader
 
-Inspired by [android-CardReader](https://github.com/googlesamples/android-CardReader
+Inspired by [android-CardReader](https://github.com/googlesamples/android-CardReader)
 
 🌟🔥Only supported Android !🔥🌟
 
