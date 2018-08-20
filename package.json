@@ -1,6 +1,5 @@
-
 {
-  "name": "react-native-hce-reader",
+  "name": "react-native-nfc-hce-reader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
