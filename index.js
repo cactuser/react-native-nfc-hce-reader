@@ -6,16 +6,16 @@ export default {
   supportNFC: function() {
     return RNHceReader.supportNFC;
   },
-  listenNFCStatus: function(callback) {
-    DeviceEventEmitter.addListener("listenNFCStatus", resp => {
-      callback(resp.status);
-    });
+  startListenNFCStatus: function(callback) {
+    DeviceEventEmitter.addListener("listenNFCStatus", callback);
   },
-  listenDataReceived: function(callback) {
-    DeviceEventEmitter.addListener("receivedData", resp => {
-      if (resp.data) {
-        callback(resp.data);
-      }
-    });
+  stopListenNFCStatus: function(callback) {
+    DeviceEventEmitter.removeListener("listenNFCStatus", callback);
+  },
+  startListenDataReceived: function(callback) {
+    DeviceEventEmitter.addListener("receivedData", callback);
+  },
+  stopListenDataReceived: function(callback) {
+    DeviceEventEmitter.removeListener("receivedData", callback);
   }
 };

@@ -197,6 +197,10 @@ public class RNHceReaderModule extends ReactContextBaseJavaModule implements Nfc
 
     @Override
     public void onHostDestroy() {
-        this.reactContext.unregisterReceiver(mReceiver);
+        try {
+            this.reactContext.unregisterReceiver(mReceiver);
+        } catch (Exception e) {
+            Log.e(TAG, "Error unregisterReceiver: " + e.toString());
+        }
     }
 }
